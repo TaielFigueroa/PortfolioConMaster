@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MiMaster.master.cs" Inherits="miportfolio.MiMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Models/estilos.css" rel="stylesheet" />
+    <script src="Models/JavaScript.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header class="main-header">
+            <a href="#" class="logo">
+                <img src="Models/Logo.png" alt="Logo del portfolio"/>
+                <h2 class="MiNombre">Taiel Figueroa</h2>
+            </a>
+                <nav class="opciones">
+                    <a runat="server" class="nav-link" href="~/Presentacion.aspx" >Inicio</a>
+                    <a runat="server" class="nav-link" href="~/AboutMe.aspx" >Acerca de mi</a>
+                    <a runat="server" class="nav-link" href="~/Conocimientos.aspx" >Conocimientos</a>
+                    <a runat="server" class="nav-link" href="~/Contacto.aspx" >Contacto</a>
+                </nav>                      
+        </header>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+            <footer id="seccionredes" class="redes">
+                <h2 class="tituloredes">Redes</h2>
+                <div class="caja-redes">
+                    <a href="https://github.com/TaielFigueroa" target="_blank">
+                        <img src="Models/GitHub.png" class="imagengithub"/>
+                    </a>
+                </div>
+            </footer>
+
+    </form>
+</body>
+</html>
